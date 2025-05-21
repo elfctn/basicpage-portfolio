@@ -68,7 +68,7 @@ const Footer = () => {
           LinkedIn
         </a>
         <a
-          href="mailto:your-email@example.com"
+          href="mailto:elifcetin.dev@gmail.com"
           className="text-red-500 hover:underline"
         >
           {language === "tr" ? "E-posta" : "Email"}
