@@ -60,7 +60,7 @@ const Footer = () => {
         </a>
 
         <a
-          href="www.linkedin.com/in/elifcetin-"
+          href="https://linkedin.com/in/elifcetin-"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-500 hover:underline"
