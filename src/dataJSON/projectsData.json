@@ -6,11 +6,9 @@
     "description-en": "A dynamic pizza ordering system with customization options.",
     "description-tr": "Özelleştirme seçenekleriyle dinamik bir pizza sipariş sistemi.",
     "tags": ["React", "Tailwind CSS", "JavaScript"],
-    "githubLink": "",
-    "appLink": "",
-    "images": [
-      "../assets/pizza.png"
-    ]
+    "githubLink": "https://github.com/elfctn/TeknolojikYemekler",
+    "appLink": "https://pizza-website2.vercel.app/",
+    "images": ["../assets/pizza.png"]
   },
   {
     "id": 2,
@@ -21,8 +19,8 @@
     "tags": ["React", "Router", "JavaScript"],
     "githubLink": "",
     "appLink": "",
-    "images": [
-      ""
-    ]
+    "images": [""]
   }
 ]
+
+//proje ve linkleri eklenecek
