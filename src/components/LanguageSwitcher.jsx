@@ -1,6 +1,5 @@
-
-import { useLanguage } from '../context/LanguageContext';
-import { LANGUAGES } from '../locale/lang';
+import { useLanguage } from "../context/LanguageContext";
+import { LANGUAGES } from "../locale/lang";
 
 const LanguageSwitcher = () => {
   const { language, toggleLanguage } = useLanguage();
