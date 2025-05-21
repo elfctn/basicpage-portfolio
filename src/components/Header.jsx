@@ -83,8 +83,9 @@ const SocialIcons = styled.div`
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 0.5rem;
-    filter: ${({ darkMode }) => (darkMode ? "brightness(0) invert(1)" : "none")};
-    transition: opacity 0.3s ease; 
+    filter: ${({ darkMode }) =>
+      darkMode ? "brightness(0) invert(1)" : "none"};
+    transition: opacity 0.3s ease;
   }
 
   img:hover {
@@ -92,7 +93,6 @@ const SocialIcons = styled.div`
     transform: scale(1.1); /* Hover durumunda logo biraz büyür */
   }
 `;
-
 
 const SwitchText = styled.span`
   font-size: 0.875rem;
@@ -138,13 +138,11 @@ const Header = () => {
               <>
                 <span>Switch to </span>
                 <span className="text-pink-500">Turkish</span>
-                
               </>
             ) : (
               <>
                 <span className="text-pink-500">İngilizce</span>
                 <span>'ye geç </span>
-                
               </>
             )}
           </SwitchText>
@@ -170,13 +168,17 @@ const Header = () => {
 
         <SocialIcons darkMode={darkMode}>
           <a
-            href="LINKEDIN_PROFILE_URL"
+            href="https://linkedin.com/in/elifcetin-"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src={linkedinLogo} alt="LinkedIn" />
           </a>
-          <a href="GITHUB_PROFILE_URL" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/elfctn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={githubLogo} alt="GitHub" />
           </a>
         </SocialIcons>
