@@ -110,5 +110,38 @@
     "githubLink": "https://github.com/elfctn/Task-Dashboard",
     "appLink": "https://task-dashboard-blush.vercel.app/",
     "images": ["../assets/taskdash.png"]
+  },
+  {
+    "id": 11,
+    "title-en": "Gratitude Journal",
+    "title-tr": "Şükran Günlüğü",
+    "description-en": "React based dynamic Gratitude Journal App",
+    "description-tr": "React ile yapılmış dinamik Şükran Günlüğü ",
+    "tags": ["HTML", "CSS", "JavaScript", "React", "Redux", "Tailwind CSS"],
+    "githubLink": "https://github.com/elfctn/Sukran-Gunlugu/tree/main",
+    "appLink": "https://sukran-gunlugu.vercel.app/",
+    "images": ["../assets/journal.png"]
+  },
+  {
+    "id": 12,
+    "title-en": "Note Keeper",
+    "title-tr": "Not Defteri",
+    "description-en": "A notebook/notepad application  developed using DOM manipulation",
+    "description-tr": "Dom manuplasyonu yapılarak yazılmış bir not defteri  ",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "githubLink": "https://github.com/elfctn/NoteKeeper",
+    "appLink": "https://note-keeper-tawny.vercel.app/",
+    "images": ["../assets/notekeeper.png"]
+  },
+  {
+    "id": 13,
+    "title-en": "Cyripto Watcher",
+    "title-tr": "kripto İzleyici",
+    "description-en": "A notebook/notepad application  developed using DOM manipulation",
+    "description-tr": "Dom manuplasyonu yapılarak yazılmış bir not defteri  ",
+    "tags": ["HTML", "CSS", "JavaScript", "React", "Date-Fns"],
+    "githubLink": "https://github.com/elfctn/Crypto-Watcher",
+    "appLink": "https://crypto-watcher-delta.vercel.app/",
+    "images": ["../assets/cyripto.png"]
   }
 ]

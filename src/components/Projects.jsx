@@ -12,6 +12,9 @@ import projectPhoto7 from "../assets/filmdata.png";
 import projectPhoto8 from "../assets/friendsdata.png";
 import projectPhoto9 from "../assets/userapp.png";
 import projectPhoto10 from "../assets/taskdash.png";
+import projectPhoto11 from "../assets/journal.png";
+import projectPhoto12 from "../assets/notekeeper.png";
+import projectPhoto13 from "../assets/cyripto.png";
 
 function Projects() {
   const [projects, setProjects] = useState([]);
@@ -61,6 +64,10 @@ function Projects() {
               projectImage = projectPhoto11;
             } else if (project.id === 12) {
               projectImage = projectPhoto12;
+            } else if (project.id === 13) {
+              projectImage = projectPhoto13;
+            } else if (project.id === 14) {
+              projectImage = projectPhoto14;
             }
 
             return (
