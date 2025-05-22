@@ -17,6 +17,17 @@ import scssLogo from "../assets/scss.png";
 import bootstrapLogo from "../assets/bootstrap.svg";
 import styledLogo from "../assets/styled.webp";
 import tailwindLogo from "../assets/tailwind.svg";
+import sqlLogo from "../assets/sql.png";
+import muiLogo from "../assets/mui.png";
+import pythonLogo from "../assets/python.png";
+import sdjpaLogo from "../assets/sdjpa.webp";
+import springsecLogo from "../assets/springsec.png";
+import hibernateLogo from "../assets/hibernate.png";
+
+import gitLogo from "../assets/git.jpg";
+import githubLogo from "../assets/github.webp";
+import gitlabLogo from "../assets/gitlab.svg";
+import jiraLogo from "../assets/jira.webp";
 
 const skillsData = [
   { logo: htmlLogo, name: "HTML" },
@@ -25,19 +36,32 @@ const skillsData = [
   { logo: bootstrapLogo, name: "Bootstrap" },
   { logo: styledLogo, name: "Styled-Components" },
   { logo: tailwindLogo, name: "TailwindCSS" },
+  { logo: muiLogo, name: "Material UI" },
   { logo: javascriptLogo, name: "JavaScript" },
   { logo: reactLogo, name: "React" },
   { logo: reduxLogo, name: "Redux" },
 
   { logo: nodeLogo, name: "Node.js" },
-
   { logo: javaLogo, name: "Java" },
+  { logo: sqlLogo, name: "SQL" },
+  { logo: pythonLogo, name: "Python" },
+
   { logo: springbootLogo, name: "Spring Boot" },
+  { logo: sdjpaLogo, name: "SpringData JPA" },
+  { logo: springsecLogo, name: "Spring Security" },
   { logo: postgreLogo, name: "PostgreSQL" },
+  { logo: hibernateLogo, name: "Hibernate" },
+
   { logo: vscodeLogo, name: "vsCode" },
-  { logo: intellijLogo, name: "intellij" },
-  { logo: pycharmLogo, name: "pycharm" },
+  { logo: intellijLogo, name: "Intellij" },
+  { logo: pycharmLogo, name: "Pycharm" },
+  { logo: jpytrLogo, name: "Jupyter Notebook" },
   { logo: figmaLogo, name: "Figma" },
+
+  { logo: githubLogo, name: "GitHub" },
+  { logo: gitlabLogo, name: "GitLab" },
+  { logo: gitLogo, name: "Git" },
+  { logo: jiraLogo, name: "Atlassian Jira" },
 ];
 
 const Skills = () => {
