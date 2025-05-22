@@ -4,6 +4,8 @@ import projectsData from "../dataJSON/projectsData.json";
 import projectPhoto from "../assets/pizza.png";
 import projectPhoto2 from "../assets/eticaret.png";
 import projectPhoto3 from "../assets/hmakine.png";
+import projectPhoto4 from "../assets/fastfood.png";
+import projectPhoto5 from "../assets/iform.png";
 import { useTheme } from "../context/ThemeContext";
 
 function Projects() {
@@ -36,6 +38,10 @@ function Projects() {
               projectImage = projectPhoto2;
             } else if (project.id === 3) {
               projectImage = projectPhoto3;
+            } else if (project.id === 4) {
+              projectImage = projectPhoto4;
+            } else if (project.id === 5) {
+              projectImage = projectPhoto5;
             } else {
               // İsteğe bağlı: id 1, 2 veya 3 ile eşleşmezse varsayılan bir resim
               projectImage = defaultProjectPhoto; // defaultProjectPhoto'yu tanımlamanız gerekir

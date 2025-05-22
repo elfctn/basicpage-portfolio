@@ -5,7 +5,7 @@
     "title-tr": "Pizza Projesi",
     "description-en": "A dynamic pizza ordering system with customization options.",
     "description-tr": "Özelleştirme seçenekleriyle dinamik bir pizza sipariş sistemi.",
-    "tags": ["React", "Tailwind CSS", "JavaScript"],
+    "tags": ["React", "Tailwind CSS", "MUI", "JavaScript"],
     "githubLink": "https://github.com/elfctn/TeknolojikYemekler",
     "appLink": "https://pizza-website2.vercel.app/",
     "images": ["../assets/pizza.png"]
@@ -19,18 +19,41 @@
     "tags": ["React", "Router", "JavaScript"],
     "githubLink": "",
     "appLink": "",
-    "images": [""]
+    "images": ["../assets/eticaret.png"]
   },
 
   {
     "id": 3,
     "title-en": "Calculator",
     "title-tr": "Hesap Makinesi",
-    "description-en": "React ",
-    "description-tr": "React ",
+    "description-en": "React, Reducer- based calculator app",
+    "description-tr": "React, Reducer ile yapılmış hesap makinesi App",
     "tags": ["React", "JavaScript"],
-    "githubLink": "",
-    "appLink": "",
-    "images": [""]
+    "githubLink": "https://github.com/elfctn/Calculator",
+    "appLink": "https://calculator-plum-seven-27.vercel.app/",
+    "images": ["../assets/hmakine.png"]
+  },
+
+  {
+    "id": 4,
+    "title-en": "Fastfood Project",
+    "title-tr": "FastFood Projesi",
+    "description-en": "HTML,CSS, JavaScript -based fastfood restourant web site",
+    "description-tr": "HTML,CSS, JavaScript ile yapılmış fastfood restorantı web sitesi ",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "githubLink": "https://github.com/elfctn/FastFood-Web",
+    "appLink": "https://fast-food-web-nine.vercel.app/",
+    "images": ["../assets/fastfood.png"]
+  },
+  {
+    "id": 5,
+    "title-en": "Contact Form",
+    "title-tr": "İletişim Formu",
+    "description-en": "React-based contact register form web app",
+    "description-tr": "React ile yapılmış iletişim kayıt formu App'i ",
+    "tags": ["React", "JavaScript"],
+    "githubLink": "https://github.com/elfctn/Iletisim-Formu",
+    "appLink": "https://iletisim-formu-six.vercel.app/",
+    "images": ["../assets/iform.png"]
   }
 ]
