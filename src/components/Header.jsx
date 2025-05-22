@@ -7,6 +7,7 @@ import linkedinLogo from "../assets/linkedin-logo.png";
 import githubLogo from "../assets/github-logo.png";
 import cvLogo from "../assets/cv-logo.png";
 import CustomSwitch from "./CustomSwitch";
+import mailLogo from "../assets/mail.png";
 
 const HeaderContainer = styled.div`
   height: auto;
@@ -192,6 +193,24 @@ const Header = () => {
               src={cvLogo}
               alt="cv"
               style={{ width: "3rem", height: "3rem", marginTop: "-0.35rem" }}
+            />
+          </a>
+
+          <a
+            href="mailto:elifcetin.dev@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={mailLogo}
+              alt="cv"
+              style={{
+                width: "2rem",
+                height: "2rem",
+                marginTop: "0.1rem",
+                filter:
+                  "drop-shadow(0 0 0 white) invert(100%) hue-rotate(180deg) saturate(0%) brightness(100%),borderRadius:50% ",
+              }}
             />
           </a>
         </SocialIcons>
