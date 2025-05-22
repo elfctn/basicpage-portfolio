@@ -5,6 +5,7 @@ import { useLanguage } from "../context/LanguageContext";
 import profilePic from "../assets/elif.jpeg";
 import linkedinLogo from "../assets/linkedin-logo.png";
 import githubLogo from "../assets/github-logo.png";
+import cvLogo from "../assets/cv-logo.png";
 import CustomSwitch from "./CustomSwitch";
 
 const HeaderContainer = styled.div`
@@ -80,8 +81,8 @@ const SocialIcons = styled.div`
   margin-left: 1.75rem;
 
   img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.2rem;
+    height: 2.2rem;
     border-radius: 0.5rem;
     filter: ${({ darkMode }) =>
       darkMode ? "brightness(0) invert(1)" : "none"};
@@ -180,6 +181,14 @@ const Header = () => {
             rel="noopener noreferrer"
           >
             <img src={githubLogo} alt="GitHub" />
+          </a>
+
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <img
+              src={cvLogo}
+              alt="cv"
+              style={{ width: "3rem", height: "3rem", marginTop: "-0.35rem" }}
+            />
           </a>
         </SocialIcons>
       </HeaderContent>
