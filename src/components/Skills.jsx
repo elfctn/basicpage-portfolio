@@ -1,26 +1,43 @@
 import { useTheme } from "../context/ThemeContext";
 import { useLanguage } from "../context/LanguageContext";
-import javascriptLogo from "../assets/js-logo.jpg"
+import javascriptLogo from "../assets/js-logo.jpg";
 import reactLogo from "../assets/react-logo.png";
 import reduxLogo from "../assets/redux-logo.png";
-import nodeLogo from "../assets/nodejs-logo.jpg"
+import nodeLogo from "../assets/nodejs-logo.jpg";
 import vscodeLogo from "../assets/vscode-logo.png";
-import figmaLogo from "../assets/github-logo.png";
+import figmaLogo from "../assets/figma.png";
 import javaLogo from "../assets/java.png";
 import springbootLogo from "../assets/springboot.png";
 import postgreLogo from "../assets/sql.png";
-
-
+import intellijLogo from "../assets/intellij.png";
+import pycharmLogo from "../assets/pycharm.png";
+import htmlLogo from "../assets/html.png";
+import cssLogo from "../assets/css.png";
+import scssLogo from "../assets/scss.png";
+import bootstrapLogo from "../assets/bootstrap.svg";
+import styledLogo from "../assets/styled.webp";
+import tailwindLogo from "../assets/tailwind.svg";
 
 const skillsData = [
+  { logo: htmlLogo, name: "HTML" },
+  { logo: cssLogo, name: "CSS" },
+  { logo: scssLogo, name: "SCSS" },
+  { logo: bootstrapLogo, name: "Bootstrap" },
+  { logo: styledLogo, name: "Styled-Components" },
+  { logo: tailwindLogo, name: "TailwindCSS" },
   { logo: javascriptLogo, name: "JavaScript" },
   { logo: reactLogo, name: "React" },
   { logo: reduxLogo, name: "Redux" },
+
   { logo: nodeLogo, name: "Node.js" },
-  { logo: vscodeLogo, name: "VS Code" },
+
   { logo: javaLogo, name: "Java" },
   { logo: springbootLogo, name: "Spring Boot" },
   { logo: postgreLogo, name: "PostgreSQL" },
+  { logo: vscodeLogo, name: "vsCode" },
+  { logo: intellijLogo, name: "intellij" },
+  { logo: pycharmLogo, name: "pycharm" },
+  { logo: figmaLogo, name: "Figma" },
 ];
 
 const Skills = () => {
@@ -31,10 +48,14 @@ const Skills = () => {
 
   return (
     <section
-      className={`p-10 ${darkMode ? "bg-gray-900 text-white" : "bg-gray-100 text-black"}`}
+      className={`p-10 ${
+        darkMode ? "bg-gray-900 text-white" : "bg-gray-100 text-black"
+      }`}
     >
       <h2
-        className={`text-3xl font-bold text-center mb-8 ${darkMode ? "text-white" : "text-black"}`}
+        className={`text-3xl font-bold text-center mb-8 ${
+          darkMode ? "text-white" : "text-black"
+        }`}
       >
         {title}
       </h2>
@@ -55,9 +76,6 @@ const Skills = () => {
           </div>
         ))}
       </div>
-     
-
-
     </section>
   );
 };

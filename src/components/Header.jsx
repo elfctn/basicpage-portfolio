@@ -183,7 +183,11 @@ const Header = () => {
             <img src={githubLogo} alt="GitHub" />
           </a>
 
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://drive.google.com/file/d/1T1e-gQrbbfmxQfBt9gNtkGAH_t96zZ4t/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src={cvLogo}
               alt="cv"
