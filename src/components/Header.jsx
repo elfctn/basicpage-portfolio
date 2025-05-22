@@ -205,11 +205,11 @@ const Header = () => {
               src={mailLogo}
               alt="cv"
               style={{
-                width: "2rem",
-                height: "2rem",
-                marginTop: "0.1rem",
+                width: "2.5rem",
+                height: "2.5rem",
+                marginTop: "-0.1rem",
                 filter:
-                  "drop-shadow(0 0 0 white) invert(100%) hue-rotate(180deg) saturate(0%) brightness(100%),borderRadius:50% ",
+                  "drop-shadow(0 0 0 white) invert(100%) hue-rotate(180deg) saturate(0%) brightness(100%),borderRadius:100% ",
               }}
             />
           </a>
