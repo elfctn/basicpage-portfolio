@@ -5,7 +5,7 @@
     "title-tr": "Teknolojik Yemekler",
     "description-en": "A dynamic foods ordering system with customization options.",
     "description-tr": "Özelleştirme seçenekleriyle dinamik bir yemek sipariş sistemi.",
-    "tags": ["React", "Tailwind CSS", "MUI", "JavaScript"],
+    "tags": ["React", "Tailwind CSS", "MUI", "JavaScript", "cypress.io"],
     "githubLink": "https://github.com/elfctn/TeknolojikYemekler",
     "appLink": "https://pizza-website2.vercel.app/",
     "images": ["../assets/pizza.png"]
@@ -66,5 +66,49 @@
     "githubLink": "https://github.com/elfctn/YoutubeClone",
     "appLink": "https://youtube-clone-orpin-nine.vercel.app/",
     "images": ["../assets/eyoutube.png"]
+  },
+  {
+    "id": 7,
+    "title-en": "Film Data App",
+    "title-tr": "Film Data App",
+    "description-en": "React based dynamic film database project",
+    "description-tr": "React ile yapılmış dinamik film database projesi ",
+    "tags": ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
+    "githubLink": "https://github.com/elfctn/HTTP_CRUD-Film-Project",
+    "appLink": "https://http-crud-film-project.vercel.app/movies",
+    "images": ["../assets/filmdata.png"]
+  },
+  {
+    "id": 8,
+    "title-en": "Friends Database",
+    "title-tr": "Friends Database",
+    "description-en": "React based dynamic film database project",
+    "description-tr": "React ile yapılmış dinamik film database projesi ",
+    "tags": ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
+    "githubLink": "https://github.com/elfctn/Friends-Databases",
+    "appLink": "https://friends-databases.vercel.app/login",
+    "images": ["../assets/friendsdata.png"]
+  },
+  {
+    "id": 9,
+    "title-en": "User Registration App",
+    "title-tr": "Kişi Kayıt APP'i",
+    "description-en": "React based dynamic user register project",
+    "description-tr": "React ile yapılmış dinamik kullanıcı kayıt projesi ",
+    "tags": ["HTML", "CSS", "JavaScript", "React", "TanStackQuery"],
+    "githubLink": "https://github.com/elfctn/WiTech-Contacts",
+    "appLink": "https://wi-tech-contacts.vercel.app/",
+    "images": ["../assets/userapp.png"]
+  },
+  {
+    "id": 10,
+    "title-en": "Task Dashboard",
+    "title-tr": "Görev Kontrol Paneli",
+    "description-en": "React based dynamic user task dashboard app",
+    "description-tr": "React ile yapılmış dinamik kullanıcı görev kontrol paneli ",
+    "tags": ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
+    "githubLink": "https://github.com/elfctn/Task-Dashboard",
+    "appLink": "https://task-dashboard-blush.vercel.app/",
+    "images": ["../assets/taskdash.png"]
   }
 ]

@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { LanguageContext } from "../context/LanguageContext";
+import { useTheme } from "../context/ThemeContext";
 import projectsData from "../dataJSON/projectsData.json";
 import projectPhoto from "../assets/pizza.png";
 import projectPhoto2 from "../assets/eticaret.png";
@@ -7,7 +8,10 @@ import projectPhoto3 from "../assets/hmakine.png";
 import projectPhoto4 from "../assets/fastfood.png";
 import projectPhoto5 from "../assets/iform.png";
 import projectPhoto6 from "../assets/eyoutube.png";
-import { useTheme } from "../context/ThemeContext";
+import projectPhoto7 from "../assets/filmdata.png";
+import projectPhoto8 from "../assets/friendsdata.png";
+import projectPhoto9 from "../assets/userapp.png";
+import projectPhoto10 from "../assets/taskdash.png";
 
 function Projects() {
   const [projects, setProjects] = useState([]);
@@ -45,9 +49,18 @@ function Projects() {
               projectImage = projectPhoto5;
             } else if (project.id === 6) {
               projectImage = projectPhoto6;
-            } else {
-              // İsteğe bağlı: id 1, 2 veya 3 ile eşleşmezse varsayılan bir resim
-              projectImage = defaultProjectPhoto; // defaultProjectPhoto'yu tanımlamanız gerekir
+            } else if (project.id === 7) {
+              projectImage = projectPhoto7;
+            } else if (project.id === 8) {
+              projectImage = projectPhoto8;
+            } else if (project.id === 9) {
+              projectImage = projectPhoto9;
+            } else if (project.id === 10) {
+              projectImage = projectPhoto10;
+            } else if (project.id === 11) {
+              projectImage = projectPhoto11;
+            } else if (project.id === 12) {
+              projectImage = projectPhoto12;
             }
 
             return (
