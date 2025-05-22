@@ -16,7 +16,7 @@ const Profile = () => {
       >
         {/* Profil Bilgileri */}
         <div
-          className={`flex flex-col w-full md:w-1/3 p-6 md:ml-24 rounded-lg border-2 hover:scale-105 ${
+          className={`flex flex-col w-full md:w-1/2 p-6 md:ml-24 rounded-lg border-2 hover:scale-105 ${
             darkMode
               ? "bg-gray-700 text-white border-gray-600"
               : "bg-white text-black border-gray-300"
@@ -31,6 +31,16 @@ const Profile = () => {
 
           {/* Bilgi Listesi */}
           <div className="space-y-4">
+            {/* İsim Soyisim */}
+            <div className="flex flex-col sm:flex-row">
+              <p className="font-bold sm:w-1/2">
+                {language === "tr" ? "İsim-Soyisim " : "Full Name"}
+              </p>
+              <p className="font-normal sm:w-1/2">
+                {language === "tr" ? " ELİF ÇETİN" : "ELIF CETIN "}
+              </p>
+            </div>
+
             {/* Doğum Tarihi */}
             <div className="flex flex-col sm:flex-row">
               <p className="font-bold sm:w-1/2">
@@ -58,8 +68,8 @@ const Profile = () => {
               </p>
               <p className="font-normal sm:w-1/2">
                 {language === "tr"
-                  ? "Sakarya Uni-Env Engineering, 2021"
-                  : "Sakarya Uni-Env Engineering, 2021"}
+                  ? "Sakarya Unv-Çevre Mühendisliği, 2021"
+                  : "Sakarya Unv-Environmental Engineering, 2021"}
               </p>
             </div>
 
@@ -99,8 +109,8 @@ const Profile = () => {
           {/* Hakkımda metnini sınırlamak ve taşmaması için */}
           <p className="max-w-sm mt-3 overflow-hidden text-ellipsis">
             {language === "tr"
-              ? "Merhaba, ben Elif. Yazılım geliştirmeye olan ilgim genç yaşlarda başladı ve şu anda full stack yazılım geliştirme konusunda uzmanlaşıyorum. Yeni teknolojileri öğrenmeye ve projeler geliştirmeye her zaman açığım. Takım çalışmasına yatkınım ve sorumluluk almayı seviyorum."
-              : "Hello, I'm Elif. My interest in software development started at a young age, and now I specialize in full stack software development. I am always open to learning new technologies and developing projects. I am a team player and enjoy taking responsibility."}
+              ? "Mühendislik alanındaki teknik ve ticari deneyimlerimin ardından, teknoloji tutkumu bir kariyere dönüştürmeye karar verdim. Şimdi, sürekli gelişime açık, yeni beceriler edinmeye ve zorlukların üstesinden gelmeye hevesli, motivasyonu yüksek bir full-stack yazılım geliştiriciyim. Güçlü analitik ve problem çözme becerilerimi; iş birlikçi bir ruh, etkili iletişim ve uyum sağlama yeteneğiyle birleştiriyorum. Takım çalışmasına yatkınım, sorumluluk almaktan keyif alırım ve tüm bu niteliklerin yüksek kaliteli yazılımlar oluşturmak için kritik olduğuna inanıyorum."
+              : "After gaining technical and commercial experience in engineering, I decided to turn my passion for technology into a career. I am now a highly motivated full-stack software developer, eager for continuous improvement, acquiring new skills, and overcoming challenges. I combine my strong analytical and problem-solving skills with a collaborative spirit, effective communication, and adaptability. I am a team player, enjoy taking responsibility, and believe all these qualities are crucial for creating high-quality software."}
           </p>
           {/*    
         <div className="relative flex justify-center w-full">
