@@ -15,6 +15,17 @@ import projectPhoto10 from "../assets/taskdash.png";
 import projectPhoto11 from "../assets/journal.png";
 import projectPhoto12 from "../assets/notekeeper.png";
 import projectPhoto13 from "../assets/cyripto.png";
+import projectPhoto14 from "../assets/menuqr.png";
+import projectPhoto15 from "../assets/pokedex.png";
+import projectPhoto16 from "../assets/filmarchive.png";
+import projectPhoto17 from "../assets/bookstore.png";
+import projectPhoto18 from "../assets/e-netflix.png";
+import projectPhoto19 from "../assets/e-twitter.png";
+import projectPhoto20 from "../assets/music.png";
+import projectPhoto21 from "../assets/gridgame.png";
+import projectPhoto22 from "../assets/jbl.png";
+import projectPhoto23 from "../assets/starbucks.png";
+import projectPhoto24 from "../assets/costy.png";
 
 function Projects() {
   const [projects, setProjects] = useState([]);
@@ -68,6 +79,26 @@ function Projects() {
               projectImage = projectPhoto13;
             } else if (project.id === 14) {
               projectImage = projectPhoto14;
+            } else if (project.id === 15) {
+              projectImage = projectPhoto15;
+            } else if (project.id === 16) {
+              projectImage = projectPhoto16;
+            } else if (project.id === 17) {
+              projectImage = projectPhoto17;
+            } else if (project.id === 18) {
+              projectImage = projectPhoto18;
+            } else if (project.id === 19) {
+              projectImage = projectPhoto19;
+            } else if (project.id === 20) {
+              projectImage = projectPhoto20;
+            } else if (project.id === 21) {
+              projectImage = projectPhoto21;
+            } else if (project.id === 22) {
+              projectImage = projectPhoto22;
+            } else if (project.id === 23) {
+              projectImage = projectPhoto23;
+            } else if (project.id === 24) {
+              projectImage = projectPhoto24;
             }
 
             return (

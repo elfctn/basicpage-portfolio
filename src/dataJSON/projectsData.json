@@ -143,5 +143,144 @@
     "githubLink": "https://github.com/elfctn/Crypto-Watcher",
     "appLink": "https://crypto-watcher-delta.vercel.app/",
     "images": ["../assets/cyripto.png"]
+  },
+  {
+    "id": 14,
+    "title-en": "Cafelif QR Menu",
+    "title-tr": "Cafelif QR Menü",
+    "description-en": "basic qr menu",
+    "description-tr": "basit bir qr menü",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "githubLink": "https://github.com/elfctn/QR-Menu",
+    "appLink": "https://qr-menu-black-omega.vercel.app/",
+    "images": ["../assets/menuqr.png"]
+  },
+  {
+    "id": 15,
+    "title-en": "Pokedex Guide",
+    "title-tr": "Pokemon Rehberi",
+    "description-en": "Type in the Pokémon's name, and learn its characteristics/details/stats.",
+    "description-tr": "pokemonun ismini yaz özelliklerini öğren",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "githubLink": "https://github.com/elfctn/Pokedex/tree/main",
+    "appLink": "https://pokedex-nine-mu-99.vercel.app/",
+    "images": ["../assets/pokedex.png"]
+  },
+  {
+    "id": 16,
+    "title-en": "Film Archive",
+    "title-tr": "Film Arşivi",
+    "description-en": "Dynamic movie recorder app made with React",
+    "description-tr": "React ile yapılmış dinamik film kaydedici",
+    "tags": ["HTML", "CSS", "JavaScript", "React", "Redux", "Tailwind CSS"],
+    "githubLink": "https://github.com/elfctn/Films-Archive/tree/main",
+    "appLink": "https://films-archive.vercel.app/",
+    "images": ["../assets/filmarchive.png"]
+  },
+  {
+    "id": 17,
+    "title-en": "Book Store",
+    "title-tr": "Kitapçı",
+    "description-en": "Calculates the price of the books you choose on the chart",
+    "description-tr": "Grafikte seçtiğiniz kitapların fiyatını hesaplar",
+    "tags": ["HTML", "CSS", "JavaScript", "React", "Redux", "ContextAPI"],
+    "githubLink": "https://github.com/elfctn/Book-Store/tree/main",
+    "appLink": "https://book-store-rouge-omega.vercel.app/",
+    "images": ["../assets/bookstore.png"]
+  },
+  {
+    "id": 18,
+    "title-en": "e-Netflix",
+    "title-tr": "e-Netflix",
+    "description-en": "a react based netflix clone project with login form",
+    "description-tr": "giriş formlu react tabanlı bir netflix klon projesi",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Redux",
+      "Tailwind CSS",
+      "ContextAPI",
+      "cypress.io"
+    ],
+    "githubLink": "https://github.com/elfctn/Netflix-expo-",
+    "appLink": "https://netflix-expo.vercel.app/signup",
+    "images": ["../assets/e-netflix.png"]
+  },
+  {
+    "id": 19,
+    "title-en": "e-Twitter",
+    "title-tr": "e-Twitter",
+    "description-en": "a react based Twitter clone project with login form",
+    "description-tr": "giriş formlu react tabanlı bir twitter klon projesi",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Redux",
+      "Tailwind CSS",
+      "ContextAPI",
+      "cypress.io"
+    ],
+    "githubLink": "https://github.com/elfctn/Twitter-expo",
+    "appLink": "https://twitter-expo-six.vercel.app/login",
+    "images": ["../assets/e-twitter.png"]
+  },
+  {
+    "id": 20,
+    "title-en": "Mini Music Player",
+    "title-tr": "Minik Müzik Çalar",
+    "description-en": "A small music player app with vanilla javascript",
+    "description-tr": "vanilla javascript ile küçük bir müzik çalar app",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "githubLink": "https://github.com/elfctn/MusicPlayer",
+    "appLink": "https://music-player-seven-phi.vercel.app/",
+    "images": ["../assets/music.png"]
+  },
+  {
+    "id": 21,
+    "title-en": "Grid Game",
+    "title-tr": "Izgara Oyunu",
+    "description-en": "An example of a simple motion and position tracking based grid game.",
+    "description-tr": "basit hareket  ve konum takip tabanlı bir ızgara oyunu örneği.",
+    "tags": ["HTML", "CSS", "JavaScript", "React", ""],
+    "githubLink": "https://github.com/elfctn/Grid-Game",
+    "appLink": "https://grid-game-mocha.vercel.app/",
+    "images": ["../assets/gridgame.png"]
+  },
+  {
+    "id": 22,
+    "title-en": "e-JBL",
+    "title-tr": "e-JBL",
+    "description-en": "jbl web market clone coded with javascript html css",
+    "description-tr": "javascript html css ile yazılmış jbl web market clonu",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "githubLink": "https://github.com/elfctn/JBL-Clone",
+    "appLink": "https://jbl-clone-nine.vercel.app/",
+    "images": ["../assets/jbl.png"]
+  },
+  {
+    "id": 23,
+    "title-en": "Starbucks Basic Website",
+    "title-tr": "Starbucks  Website",
+    "description-en": "starbucks website coded with javascript html css",
+    "description-tr": "javascript html css ile yazılmış starbucks websitesi",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "githubLink": "https://github.com/elfctn/Starbucks-bsic/tree/main",
+    "appLink": "https://starbucks-bsic.vercel.app/",
+    "images": ["../assets/starbucks.png"]
+  },
+  {
+    "id": 24,
+    "title-en": "Costy Shop",
+    "title-tr": "Costy Shop",
+    "description-en": "basic e-commerce website coded with javascript html css",
+    "description-tr": "javascript html css ile yazılmış basit bir e-ticaret sitesi",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "githubLink": "https://github.com/elfctn/E-Commerce-Costy",
+    "appLink": "https://e-commerce-costy.vercel.app/",
+    "images": ["../assets/costy.png"]
   }
 ]
