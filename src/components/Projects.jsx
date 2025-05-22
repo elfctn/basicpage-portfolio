@@ -1,8 +1,9 @@
 import { useContext, useEffect, useState } from "react";
 import { LanguageContext } from "../context/LanguageContext";
-import projectsData from '../dataJSON/projectsData.json';
+import projectsData from "../dataJSON/projectsData.json";
 import projectPhoto from "../assets/pizza.png";
 import projectPhoto2 from "../assets/eticaret.png";
+import projectPhoto3 from "../assets/hmakine.png";
 import { useTheme } from "../context/ThemeContext";
 
 function Projects() {
@@ -15,20 +16,37 @@ function Projects() {
   }, []);
 
   return (
-    <section className={`py-16 ${darkMode ? 'bg-gray-900 text-white' : 'bg-white'}`}>
-      <h4 className={`text-4xl font-semibold text-center ${darkMode ? 'text-blue-300' : 'text-blue-700'} mb-10`}>
+    <section
+      className={`py-16 ${darkMode ? "bg-gray-900 text-white" : "bg-white"}`}
+    >
+      <h4
+        className={`text-4xl font-semibold text-center ${
+          darkMode ? "text-blue-300" : "text-blue-700"
+        } mb-10`}
+      >
         {language === "en" ? "Projects" : "Projeler"}
       </h4>
       <div className="flex flex-wrap justify-center gap-10">
         {Array.isArray(projects) && projects.length > 0 ? (
           projects.map((project) => {
-            const projectImage =
-              project.id === 1 ? projectPhoto : projectPhoto2;
+            let projectImage;
+            if (project.id === 1) {
+              projectImage = projectPhoto;
+            } else if (project.id === 2) {
+              projectImage = projectPhoto2;
+            } else if (project.id === 3) {
+              projectImage = projectPhoto3;
+            } else {
+              // İsteğe bağlı: id 1, 2 veya 3 ile eşleşmezse varsayılan bir resim
+              projectImage = defaultProjectPhoto; // defaultProjectPhoto'yu tanımlamanız gerekir
+            }
 
             return (
               <div
                 key={project.id}
-                className={` from-blue-100 to-blue-300 shadow-lg rounded-lg w-[350px] overflow-hidden transform transition-all duration-300 hover:scale-105 ${darkMode ? 'bg-gray-800' : ''}`}
+                className={` from-blue-100 to-blue-300 shadow-lg rounded-lg w-[350px] overflow-hidden transform transition-all duration-300 hover:scale-105 ${
+                  darkMode ? "bg-gray-800" : ""
+                }`}
               >
                 <div className="relative h-64">
                   <img
@@ -38,11 +56,25 @@ function Projects() {
                   />
                   <div className="absolute inset-0 bg-black opacity-30"></div>
                 </div>
-                <div className={`p-6 ${darkMode ? 'bg-gray-700' : 'bg-white'} rounded-b-lg`}>
-                  <h5 className={`text-xl font-semibold ${darkMode ? 'text-white' : 'text-blue-800'}`}>
-                    {language === "en" ? project["title-en"] : project["title-tr"]}
+                <div
+                  className={`p-6 ${
+                    darkMode ? "bg-gray-700" : "bg-white"
+                  } rounded-b-lg`}
+                >
+                  <h5
+                    className={`text-xl font-semibold ${
+                      darkMode ? "text-white" : "text-blue-800"
+                    }`}
+                  >
+                    {language === "en"
+                      ? project["title-en"]
+                      : project["title-tr"]}
                   </h5>
-                  <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'} mt-2`}>
+                  <p
+                    className={`text-sm ${
+                      darkMode ? "text-gray-300" : "text-gray-600"
+                    } mt-2`}
+                  >
                     {language === "en"
                       ? project["description-en"]
                       : project["description-tr"]}
@@ -59,7 +91,9 @@ function Projects() {
                   </div>
                   <div className="flex justify-between mt-6">
                     <a
-                      className={`text-blue-700 font-semibold hover:underline ${darkMode ? 'text-white' : ''}`}
+                      className={`text-blue-700 font-semibold hover:underline ${
+                        darkMode ? "text-white" : ""
+                      }`}
                       href={project.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -67,7 +101,9 @@ function Projects() {
                       {language === "en" ? "GitHub" : "GitHub"} &rarr;
                     </a>
                     <a
-                      className={`text-blue-700 font-semibold hover:underline ${darkMode ? 'text-white' : ''}`}
+                      className={`text-blue-700 font-semibold hover:underline ${
+                        darkMode ? "text-white" : ""
+                      }`}
                       href={project.appLink}
                       target="_blank"
                       rel="noopener noreferrer"
