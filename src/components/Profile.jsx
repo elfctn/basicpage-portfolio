@@ -79,7 +79,9 @@ const Profile = () => {
                 {language === "tr" ? "Tercih Ettiği Rol" : "Preferred Role"}
               </p>
               <p className="font-normal sm:w-1/2">
-                {language === "tr" ? "FullStack" : "FullStack"}
+                {language === "tr"
+                  ? "Full-Stack Yazılım geliştirici"
+                  : "Full-Stack Software Developer"}
               </p>
             </div>
           </div>

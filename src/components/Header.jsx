@@ -154,8 +154,8 @@ const Header = () => {
             <Title>{language === "tr" ? "Merhaba! 👋" : "Hi! 👋"}</Title>
             <Subtitle>
               {language === "tr"
-                ? "Ben yazılım geliştiriciyim. Sağlam ve ölçeklenebilir ürünler geliştirebilirim. Hadi tanışalım!"
-                : "I'm a Software Developer. I can craft solid and scalable products. Let's meet!"}
+                ? "Ben yazılım geliştiriciyim. Sağlam ve ölçeklenebilir ürünler geliştirebilirim."
+                : "I'm a Software Developer. I can craft solid and scalable products. "}
             </Subtitle>
           </div>
 
