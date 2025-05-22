@@ -23,11 +23,17 @@ import pythonLogo from "../assets/python.png";
 import sdjpaLogo from "../assets/sdjpa.webp";
 import springsecLogo from "../assets/springsec.png";
 import hibernateLogo from "../assets/hibernate.png";
-
+import jpytrLogo from "../assets/jpytr.png";
 import gitLogo from "../assets/git.jpg";
 import githubLogo from "../assets/github.webp";
 import gitlabLogo from "../assets/gitlab.svg";
 import jiraLogo from "../assets/jira.webp";
+import postmanLogo from "../assets/postman.png";
+import viteLogo from "../assets/vite.png";
+import rqueryLogo from "../assets/rquery.png";
+import cursorLogo from "../assets/cursor.jpeg";
+import geminiLogo from "../assets/gemini.png";
+import openaiLogo from "../assets/openai.png";
 
 const skillsData = [
   { logo: htmlLogo, name: "HTML" },
@@ -40,6 +46,8 @@ const skillsData = [
   { logo: javascriptLogo, name: "JavaScript" },
   { logo: reactLogo, name: "React" },
   { logo: reduxLogo, name: "Redux" },
+  { logo: rqueryLogo, name: "TanStack Query" },
+  { logo: viteLogo, name: "Vite" },
 
   { logo: nodeLogo, name: "Node.js" },
   { logo: javaLogo, name: "Java" },
@@ -56,12 +64,16 @@ const skillsData = [
   { logo: intellijLogo, name: "Intellij" },
   { logo: pycharmLogo, name: "Pycharm" },
   { logo: jpytrLogo, name: "Jupyter Notebook" },
-  { logo: figmaLogo, name: "Figma" },
 
+  { logo: figmaLogo, name: "Figma" },
   { logo: githubLogo, name: "GitHub" },
   { logo: gitlabLogo, name: "GitLab" },
   { logo: gitLogo, name: "Git" },
   { logo: jiraLogo, name: "Atlassian Jira" },
+  { logo: postmanLogo, name: "Postman" },
+  { logo: cursorLogo, name: "Cursor" },
+  { logo: geminiLogo, name: "Gemini" },
+  { logo: openaiLogo, name: "OpenAI" },
 ];
 
 const Skills = () => {
