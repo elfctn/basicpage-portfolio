@@ -151,11 +151,11 @@ const Header = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex flex-col space-y-4 md:w-1/2">
-            <Title>{language === "tr" ? "Merhaba! 👋" : "Hello! 👋"}</Title>
+            <Title>{language === "tr" ? "Merhaba! 👋" : "Hi! 👋"}</Title>
             <Subtitle>
               {language === "tr"
-                ? "Ben Elif. Yazılım geliştiriciyim. Sağlam ve ölçeklenebilir ürünler geliştirebilirim. Hadi tanışalım!"
-                : "I'm Elif. I'm a Software Developer. I can craft solid and scalable products. Let's meet!"}
+                ? "Ben yazılım geliştiriciyim. Sağlam ve ölçeklenebilir ürünler geliştirebilirim. Hadi tanışalım!"
+                : "I'm a Software Developer. I can craft solid and scalable products. Let's meet!"}
             </Subtitle>
           </div>
 
