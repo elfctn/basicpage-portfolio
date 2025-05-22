@@ -55,5 +55,16 @@
     "githubLink": "https://github.com/elfctn/Iletisim-Formu",
     "appLink": "https://iletisim-formu-six.vercel.app/",
     "images": ["../assets/iform.png"]
+  },
+  {
+    "id": 6,
+    "title-en": "e-Youtube",
+    "title-tr": "e-Youtube",
+    "description-en": "HTML,CSS, JavaScript based clone Youtube project",
+    "description-tr": "HTML,CSS, JavaScript ile yapılmış Youtube clone projesi ",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "githubLink": "https://github.com/elfctn/YoutubeClone",
+    "appLink": "https://youtube-clone-orpin-nine.vercel.app/",
+    "images": ["../assets/eyoutube.png"]
   }
 ]
