@@ -263,8 +263,8 @@
   },
   {
     "id": 23,
-    "title-en": "Starbucks Basic Website",
-    "title-tr": "Starbucks  Website",
+    "title-en": "Hello Starbucks !",
+    "title-tr": "Hello Starbucks !",
     "description-en": "starbucks website coded with javascript html css",
     "description-tr": "javascript html css ile yazılmış starbucks websitesi",
     "tags": ["HTML", "CSS", "JavaScript"],
@@ -285,8 +285,8 @@
   },
   {
     "id": 25,
-    "title-en": "Lingoelif",
-    "title-tr": "Lingoelif",
+    "title-en": "LingoElif",
+    "title-tr": "LingoElif",
     "description-en": "basic translate website coded with redux toolkit and tailwindCSS",
     "description-tr": "redux toolkit ve tailwindCSS ile yazılmış basit bir çeviri sitesi",
     "tags": ["HTML", "Tailwind CSS", "JavaScript", "React", "ReduxToolkit"],
