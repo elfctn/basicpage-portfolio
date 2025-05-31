@@ -282,5 +282,16 @@
     "githubLink": "https://github.com/elfctn/E-Commerce-Costy",
     "appLink": "https://e-commerce-costy.vercel.app/",
     "images": ["../assets/costy.png"]
+  },
+  {
+    "id": 25,
+    "title-en": "Lingoelif",
+    "title-tr": "Lingoelif",
+    "description-en": "basic translate website coded with redux toolkit and tailwindCSS",
+    "description-tr": "redux toolkit ve tailwindCSS ile yazılmış basit bir çeviri sitesi",
+    "tags": ["HTML", "Tailwind CSS", "JavaScript", "React", "ReduxToolkit"],
+    "githubLink": "https://github.com/elfctn/Lingoelif-Translate",
+    "appLink": "https://lingoelif.vercel.app/",
+    "images": ["../assets/lingoelif.png"]
   }
 ]
