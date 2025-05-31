@@ -34,6 +34,7 @@ import rqueryLogo from "../assets/rquery.png";
 import cursorLogo from "../assets/cursor.jpeg";
 import geminiLogo from "../assets/gemini.png";
 import openaiLogo from "../assets/openai.png";
+import cypressLogo from "../assets/cypress.jpg";
 
 const skillsData = [
   { logo: htmlLogo, name: "HTML" },
@@ -48,6 +49,7 @@ const skillsData = [
   { logo: reduxLogo, name: "Redux" },
   { logo: rqueryLogo, name: "TanStack Query" },
   { logo: viteLogo, name: "Vite" },
+  { logo: cypressLogo, name: "Cypress" },
 
   { logo: nodeLogo, name: "Node.js" },
   { logo: javaLogo, name: "Java" },
