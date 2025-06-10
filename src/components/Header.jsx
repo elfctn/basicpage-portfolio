@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { useState } from "react";
 import { useTheme } from "../context/ThemeContext";
 import { useLanguage } from "../context/LanguageContext";
-import profilePic from "../assets/elif.jpeg";
+import profilePic from "../assets/elf-linkedn.jpg";
 import linkedinLogo from "../assets/linkedin-logo.png";
 import githubLogo from "../assets/github-logo.png";
 import cvLogo from "../assets/cv-logo.png";
@@ -31,10 +31,10 @@ const ProfilePicture = styled.div`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   overflow: hidden;
-  width: 70px;
-  height: 70px;
+  width: 200px;
+  height: 2000px;
   position: absolute;
-  top: 1rem;
+  top: 4rem;
   right: 1rem;
   img {
     object-fit: cover;
@@ -185,7 +185,7 @@ const Header = () => {
           </a>
 
           <a
-            href="https://drive.google.com/file/d/1QySHEZ9Bl01HJm4sNkhH38cptLanVEyz/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1nW1UNefOETq9UxXdkCE8dmoRzLCAwDOp/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
           >
