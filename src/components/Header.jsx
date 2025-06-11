@@ -31,8 +31,8 @@ const ProfilePicture = styled.div`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   overflow: hidden;
-  width: 200px;
-  height: 2000px;
+  width: 80px;
+  height: 80px;
   position: absolute;
   top: 4rem;
   right: 1rem;
