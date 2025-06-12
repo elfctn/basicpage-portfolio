@@ -27,6 +27,7 @@ import projectPhoto22 from "../assets/jbl.png";
 import projectPhoto23 from "../assets/starbucks.png";
 import projectPhoto24 from "../assets/costy.png";
 import projectPhoto25 from "../assets/lingoelif.png";
+import projectPhoto26 from "../assets/pcards.png";
 
 function Projects() {
   const [projects, setProjects] = useState([]);
@@ -102,8 +103,9 @@ function Projects() {
               projectImage = projectPhoto24;
             } else if (project.id === 25) {
               projectImage = projectPhoto25;
+            } else if (project.id === 26) {
+              projectImage = projectPhoto26;
             }
-
             return (
               <div
                 key={project.id}

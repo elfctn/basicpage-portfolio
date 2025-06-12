@@ -293,5 +293,16 @@
     "githubLink": "https://github.com/elfctn/Lingoelif-Translate",
     "appLink": "https://lingoelif.vercel.app/",
     "images": ["../assets/lingoelif.png"]
+  },
+  {
+    "id": 26,
+    "title-en": "ProfileCards",
+    "title-tr": "Profil Kartları",
+    "description-en": "A mini APP that displays github cards made with HTML, CSS, JavaScript on behalf of the user",
+    "description-tr": "HTML,CSS, JavaScript ile yapılmış github kartlarını kullanıcı adına göre gösteren bir mini APP ",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "githubLink": "https://github.com/elfctn/ProfileCard-github",
+    "appLink": "https://profile-card-github-delta.vercel.app/",
+    "images": ["../assets/pcards.png"]
   }
 ]
