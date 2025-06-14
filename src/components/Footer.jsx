@@ -13,10 +13,10 @@ const Footer = () => {
     >
       {/* Slogan*/}
       <p
-        className={`text-5xl mb-4 p-10 font-semibold ${
+        className={`text-5xl mb-4 p-10 font-semibold leading-normal ${
+          // lineHeight için Tailwind class'ı
           darkMode ? "text-white" : "text-black"
         } mb-3`}
-        style={{ lineHeight: "1.8" }}
       >
         {language === "tr" ? (
           <>
@@ -30,11 +30,9 @@ const Footer = () => {
         <div
           className={`w-[18rem] h-4 opacity-65 ${
             darkMode ? "bg-blue-400" : "bg-blue-600"
-          } rounded-full mx-auto`}
-          style={{
-            marginTop: "-1%",
-            transform: "translateX(15%) translateY(-700%)", // Bu değeri değiştirerek sağa veya sola hareket ettirebilirsiniz
-          }}
+          } rounded-full mx-auto 
+            mt-[-1%] translate-x-[15%] -translate-y-[700%]
+            `} // Inline stiller Tailwind class'larına dönüştürüldü
         />
       </p>
 
