@@ -1,4 +1,4 @@
-// styled import'u şimdilik duruyor, diğer styled components kullanıldığı için
+// styled import'u şimdilik duruyor
 import styled from "styled-components";
 import { useState } from "react";
 import { useTheme } from "../context/ThemeContext";
@@ -11,10 +11,10 @@ import CustomSwitch from "./CustomSwitch";
 import mailLogo from "../assets/mail.png";
 
 // HeaderContainer Styled Component'ı kaldırıldı
-// const HeaderContainer = styled.div` ... `
-
 // HeaderContent Styled Component'ı kaldırıldı
-// const HeaderContent = styled.header` ... `
+// ProfilePicture Styled Component'ı hala duruyor
+// Title Styled Component'ı kaldırıldı
+// Subtitle Styled Component'ı kaldırıldı
 
 const ProfilePicture = styled.div`
   background-color: #ec4899;
@@ -37,21 +37,6 @@ const ProfilePicture = styled.div`
     width: 20rem;
     height: 20rem;
     border-radius: 1rem;
-  }
-`;
-
-// Title Styled Component'ı kaldırıldı
-// const Title = styled.h1` ... `
-
-const Subtitle = styled.p`
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-left: 2.5rem;
-  margin-top: 1rem;
-  margin-bottom: 2.5rem;
-
-  @media (min-width: 768px) {
-    font-size: 2.5rem;
   }
 `;
 
@@ -138,15 +123,15 @@ const Header = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex flex-col space-y-4 md:w-1/2">
-            {/* Title yerine h1 kullanıldı ve stilleri Tailwind class'larına dönüştürüldü */}
             <h1 className="text-3xl font-normal ml-10 mb-4 md:text-6xl">
               {language === "tr" ? "Merhaba! 👋" : "Hi! 👋"}
             </h1>
-            <Subtitle>
+            {/* Subtitle yerine p kullanıldı ve stilleri Tailwind class'larına dönüştürüldü */}
+            <p className="text-2xl font-semibold ml-10 mt-4 mb-10 md:text-4xl">
               {language === "tr"
                 ? "Ben yazılım geliştiriciyim. Sağlam ve ölçeklenebilir ürünler geliştirebilirim."
                 : "I'm a Software Developer. I can craft solid and scalable products. "}
-            </Subtitle>
+            </p>
           </div>
 
           <ProfilePicture>
@@ -203,7 +188,7 @@ const Header = () => {
             />
           </a>
         </SocialIcons>
-      </header>{" "}
+      </header>
     </div>
   );
 };
