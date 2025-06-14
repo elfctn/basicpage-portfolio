@@ -103,8 +103,7 @@ const Profile = () => {
             <div
               className={`w-[5rem] h-4 opacity-65 ${
                 darkMode ? "bg-blue-400" : "bg-blue-600"
-              } rounded-full mx-auto`}
-              style={{ marginLeft: "-1%", marginTop: "-3%" }} // Çizgiyi sola kaydırır
+              } rounded-full mx-auto ml-[-1%] mt-[-3%]`}
             />
           </h3>
 
@@ -112,14 +111,8 @@ const Profile = () => {
           <p className="max-w-sm mt-3 overflow-hidden text-ellipsis">
             {language === "tr"
               ? "Mühendislik alanındaki teknik ve ticari deneyimlerimin ardından, teknoloji tutkumu bir kariyere dönüştürmeye karar verdim. Şimdi, sürekli gelişime açık, yeni beceriler edinmeye ve zorlukların üstesinden gelmeye hevesli, motivasyonu yüksek bir full-stack yazılım geliştiriciyim. Güçlü analitik ve problem çözme becerilerimi; iş birlikçi bir ruh, etkili iletişim ve uyum sağlama yeteneğiyle birleştiriyorum. Takım çalışmasına yatkınım, sorumluluk almaktan keyif alırım ve tüm bu niteliklerin yüksek kaliteli yazılımlar oluşturmak için kritik olduğuna inanıyorum."
-              : "After gaining technical and commercial experience in engineering, I decided to turn my passion for technology into a career. I am now a highly motivated full-stack software developer, eager for continuous improvement, acquiring new skills, and overcoming challenges. I combine my strong analytical and problem-solving skills with a collaborative spirit, effective communication, and adaptability. I am a team player, enjoy taking responsibility, and believe all these qualities are crucial for creating high-quality software."}
+              : "After gaining technical and commercial experience in engineering, I decided to turn my passion for technology into a career. I am now a highly motivated full-stack software developer, eager for continuous improvement, acquiring new skills, and overcoming challenges. I combine my strong analytical and problem-solving skills with a collaborative spirit, effective communication, and adaptability. I am a team player, enjoy taking responsibility, and believe all qualities are crucial for creating high-quality software."}
           </p>
-          {/*    
-        <div className="relative flex justify-center w-full">
-          <div className="absolute translate-x-[-1.5rem] translate-y-[-4.8rem]"></div>
-        <div className="w-full sm:w-[10rem] h-[1rem] border-[0.6rem] border-blue-500 rounded-l-3xl rounded-r-3xl opacity-65 absolute translate-x-[-6rem] translate-y-[-10.5rem] md:w-[20rem] md:h-[1rem] md:border-[0.6rem] md:border-blue-500 md:rounded-l-3xl md:rounded-r-3xl md:opacity-65 md:absolute md:translate-x-[-6rem] md:translate-y-[-10.5rem]" style={{ maxWidth: "90%" }}></div>
-      </div>
-      */}
         </div>
       </div>
     </section>
