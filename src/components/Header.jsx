@@ -40,16 +40,8 @@ const ProfilePicture = styled.div`
   }
 `;
 
-const Title = styled.h1`
-  font-size: 2rem;
-  font-weight: normal;
-  margin-left: 2.5rem;
-  margin-bottom: 1rem;
-
-  @media (min-width: 768px) {
-    font-size: 4rem;
-  }
-`;
+// Title Styled Component'ı kaldırıldı
+// const Title = styled.h1` ... `
 
 const Subtitle = styled.p`
   font-size: 1.5rem;
@@ -111,7 +103,6 @@ const Header = () => {
         darkMode ? "bg-gray-800 text-white" : "bg-gray-100 text-black"
       }`}
     >
-      {/* HeaderContent yerine header kullanıldı ve stilleri Tailwind class'larına dönüştürüldü */}
       <header className="w-full p-4 md:p-10">
         <div className="flex justify-end items-center mb-4 space-x-4 mr-20">
           <div className="flex items-center space-x-2">
@@ -147,7 +138,10 @@ const Header = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex flex-col space-y-4 md:w-1/2">
-            <Title>{language === "tr" ? "Merhaba! 👋" : "Hi! 👋"}</Title>
+            {/* Title yerine h1 kullanıldı ve stilleri Tailwind class'larına dönüştürüldü */}
+            <h1 className="text-3xl font-normal ml-10 mb-4 md:text-6xl">
+              {language === "tr" ? "Merhaba! 👋" : "Hi! 👋"}
+            </h1>
             <Subtitle>
               {language === "tr"
                 ? "Ben yazılım geliştiriciyim. Sağlam ve ölçeklenebilir ürünler geliştirebilirim."
@@ -210,7 +204,6 @@ const Header = () => {
           </a>
         </SocialIcons>
       </header>{" "}
-      {/* <-- Buradaki kapanış etiketi hatayı çözecekk*/}
     </div>
   );
 };
