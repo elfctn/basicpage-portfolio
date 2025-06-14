@@ -13,13 +13,8 @@ import mailLogo from "../assets/mail.png";
 // HeaderContainer Styled Component'ı kaldırıldı
 // const HeaderContainer = styled.div` ... `
 
-const HeaderContent = styled.header`
-  width: 100%;
-  padding: 1rem;
-  @media (min-width: 768px) {
-    padding: 2.5rem;
-  }
-`;
+// HeaderContent Styled Component'ı kaldırıldı
+// const HeaderContent = styled.header` ... `
 
 const ProfilePicture = styled.div`
   background-color: #ec4899;
@@ -111,13 +106,13 @@ const Header = () => {
   };
 
   return (
-    // HeaderContainer yerine div kullanıldı ve stilleri Tailwind class'larına dönüştürüldü
     <div
       className={`h-auto flex justify-center items-center ${
         darkMode ? "bg-gray-800 text-white" : "bg-gray-100 text-black"
       }`}
     >
-      <HeaderContent>
+      {/* HeaderContent yerine header kullanıldı ve stilleri Tailwind class'larına dönüştürüldü */}
+      <header className="w-full p-4 md:p-10">
         <div className="flex justify-end items-center mb-4 space-x-4 mr-20">
           <div className="flex items-center space-x-2">
             <CustomSwitch
@@ -214,7 +209,8 @@ const Header = () => {
             />
           </a>
         </SocialIcons>
-      </HeaderContent>
+      </header>{" "}
+      {/* <-- Buradaki kapanış etiketi hatayı çözecekk*/}
     </div>
   );
 };
