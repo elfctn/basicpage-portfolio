@@ -1,4 +1,4 @@
-// styled import'u şimdilik duruyor
+// styled import'u sadece ProfilePicture için gerekli, diğerleri kaldırıldı
 import styled from "styled-components";
 import { useState } from "react";
 import { useTheme } from "../context/ThemeContext";
@@ -10,11 +10,13 @@ import cvLogo from "../assets/cv-logo.png";
 import CustomSwitch from "./CustomSwitch";
 import mailLogo from "../assets/mail.png";
 
-// HeaderContainer Styled Component'ı kaldırıldı
-// HeaderContent Styled Component'ı kaldırıldı
-// ProfilePicture Styled Component'ı hala duruyor
-// Title Styled Component'ı kaldırıldı
-// Subtitle Styled Component'ı kaldırıldı
+// Tüm Styled Components tanımları kaldırıldı (ProfilePicture hariç)
+// const HeaderContainer = styled.div` ... `
+// const HeaderContent = styled.header` ... `
+// const Title = styled.h1` ... `
+// const Subtitle = styled.p` ... `
+// const SocialIcons = styled.div` ... `
+// const SwitchText = styled.span` ... `
 
 const ProfilePicture = styled.div`
   background-color: #ec4899;
@@ -37,38 +39,6 @@ const ProfilePicture = styled.div`
     width: 20rem;
     height: 20rem;
     border-radius: 1rem;
-  }
-`;
-
-const SocialIcons = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  gap: 1.5rem;
-  margin-top: 2rem;
-  padding: 1rem;
-  margin-left: 1.75rem;
-
-  img {
-    width: 2.2rem;
-    height: 2.2rem;
-    border-radius: 0.5rem;
-    filter: ${({ darkMode }) =>
-      darkMode ? "brightness(0) invert(1)" : "none"};
-    transition: opacity 0.3s ease;
-  }
-
-  img:hover {
-    opacity: 0.7; /* Hover durumunda opaklık azalır */
-    transform: scale(1.1); /* Hover durumunda logo biraz büyür */
-  }
-`;
-
-const SwitchText = styled.span`
-  font-size: 0.875rem;
-  cursor: pointer;
-  color: ${({ darkMode }) => (darkMode ? "white" : "black")};
-  @media (min-width: 768px) {
-    font-size: 1rem;
   }
 `;
 
@@ -95,7 +65,11 @@ const Header = () => {
               isChecked={isChecked}
               handleSwitchChange={handleSwitchChange}
             />
-            <SwitchText darkMode={darkMode}>
+            <span
+              className={`text-sm cursor-pointer ${
+                darkMode ? "text-white" : "text-black"
+              } md:text-base`}
+            >
               {darkMode
                 ? language === "tr"
                   ? "Aydınlık Mod"
@@ -103,10 +77,15 @@ const Header = () => {
                 : language === "tr"
                 ? "Karanlık Mod"
                 : "Dark Mode"}
-            </SwitchText>
+            </span>
           </div>
 
-          <SwitchText darkMode={darkMode} onClick={toggleLanguage}>
+          <span
+            className={`text-sm cursor-pointer ${
+              darkMode ? "text-white" : "text-black"
+            } md:text-base`}
+            onClick={toggleLanguage}
+          >
             {language === "en" ? (
               <>
                 <span>Switch to </span>
@@ -118,7 +97,7 @@ const Header = () => {
                 <span>'ye geç </span>
               </>
             )}
-          </SwitchText>
+          </span>
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center">
@@ -126,7 +105,6 @@ const Header = () => {
             <h1 className="text-3xl font-normal ml-10 mb-4 md:text-6xl">
               {language === "tr" ? "Merhaba! 👋" : "Hi! 👋"}
             </h1>
-            {/* Subtitle yerine p kullanıldı ve stilleri Tailwind class'larına dönüştürüldü */}
             <p className="text-2xl font-semibold ml-10 mt-4 mb-10 md:text-4xl">
               {language === "tr"
                 ? "Ben yazılım geliştiriciyim. Sağlam ve ölçeklenebilir ürünler geliştirebilirim."
@@ -142,20 +120,32 @@ const Header = () => {
           </ProfilePicture>
         </div>
 
-        <SocialIcons darkMode={darkMode}>
+        <div className="flex justify-start gap-6 mt-8 p-4 ml-7">
           <a
             href="https://linkedin.com/in/elifcetin-"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={linkedinLogo} alt="LinkedIn" />
+            <img
+              className={`w-9 h-9 rounded-full object-contain ${
+                darkMode ? "brightness-0 invert" : ""
+              } transition-opacity duration-300 hover:opacity-70 hover:scale-110`}
+              src={linkedinLogo}
+              alt="LinkedIn"
+            />
           </a>
           <a
             href="https://github.com/elfctn"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={githubLogo} alt="GitHub" />
+            <img
+              className={`w-9 h-9 rounded-full object-contain ${
+                darkMode ? "brightness-0 invert" : ""
+              } transition-opacity duration-300 hover:opacity-70 hover:scale-110`}
+              src={githubLogo}
+              alt="GitHub"
+            />
           </a>
 
           <a
@@ -165,8 +155,9 @@ const Header = () => {
           >
             <img
               src={cvLogo}
-              alt="cv"
-              style={{ width: "3rem", height: "3rem", marginTop: "-0.35rem" }}
+              alt="CV Icon"
+              className={`w-12 h-12 -mt-1.5 rounded-full object-contain
+                         transition-opacity duration-300 hover:opacity-70 hover:scale-110`} // Inline stiller tamamen Tailwind'e dönüştürüldü ve hover eklendi
             />
           </a>
 
@@ -177,17 +168,13 @@ const Header = () => {
           >
             <img
               src={mailLogo}
-              alt="cv"
-              style={{
-                width: "2.5rem",
-                height: "2.5rem",
-                marginTop: "-0.1rem",
-                filter:
-                  "drop-shadow(0 0 0 white) invert(100%) hue-rotate(180deg) saturate(0%) brightness(100%),borderRadius:100% ",
-              }}
+              alt="Email Icon"
+              className={`w-10 h-10 -mt-0.5 rounded-full object-contain
+                filter drop-shadow-none invert hue-rotate-180 saturate-0 brightness-100%
+                transition-opacity duration-300 hover:opacity-70 hover:scale-110`} // Inline stiller tamamen Tailwind'e dönüştürüldü ve hover eklendi
             />
           </a>
-        </SocialIcons>
+        </div>
       </header>
     </div>
   );
