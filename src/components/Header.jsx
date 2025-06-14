@@ -1,3 +1,4 @@
+// styled import'u şimdilik duruyor, diğer styled components kullanıldığı için
 import styled from "styled-components";
 import { useState } from "react";
 import { useTheme } from "../context/ThemeContext";
@@ -9,14 +10,8 @@ import cvLogo from "../assets/cv-logo.png";
 import CustomSwitch from "./CustomSwitch";
 import mailLogo from "../assets/mail.png";
 
-const HeaderContainer = styled.div`
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: ${({ darkMode }) => (darkMode ? "#1f2937" : "#e5e7eb")};
-  color: ${({ darkMode }) => (darkMode ? "white" : "black")};
-`;
+// HeaderContainer Styled Component'ı kaldırıldı
+// const HeaderContainer = styled.div` ... `
 
 const HeaderContent = styled.header`
   width: 100%;
@@ -116,7 +111,12 @@ const Header = () => {
   };
 
   return (
-    <HeaderContainer darkMode={darkMode}>
+    // HeaderContainer yerine div kullanıldı ve stilleri Tailwind class'larına dönüştürüldü
+    <div
+      className={`h-auto flex justify-center items-center ${
+        darkMode ? "bg-gray-800 text-white" : "bg-gray-100 text-black"
+      }`}
+    >
       <HeaderContent>
         <div className="flex justify-end items-center mb-4 space-x-4 mr-20">
           <div className="flex items-center space-x-2">
@@ -215,7 +215,7 @@ const Header = () => {
           </a>
         </SocialIcons>
       </HeaderContent>
-    </HeaderContainer>
+    </div>
   );
 };
 
