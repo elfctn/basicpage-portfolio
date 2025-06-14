@@ -1,5 +1,6 @@
-// styled import'u sadece ProfilePicture için gerekli, diğerleri kaldırıldı
-import styled from "styled-components";
+// styled import'u tamamen kaldırıldı
+// import styled from "styled-components";
+
 import { useState } from "react";
 import { useTheme } from "../context/ThemeContext";
 import { useLanguage } from "../context/LanguageContext";
@@ -10,37 +11,7 @@ import cvLogo from "../assets/cv-logo.png";
 import CustomSwitch from "./CustomSwitch";
 import mailLogo from "../assets/mail.png";
 
-// Tüm Styled Components tanımları kaldırıldı (ProfilePicture hariç)
-// const HeaderContainer = styled.div` ... `
-// const HeaderContent = styled.header` ... `
-// const Title = styled.h1` ... `
-// const Subtitle = styled.p` ... `
-// const SocialIcons = styled.div` ... `
-// const SwitchText = styled.span` ... `
-
-const ProfilePicture = styled.div`
-  background-color: #ec4899;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  overflow: hidden;
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  top: 4rem;
-  right: 1rem;
-  img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-
-  @media (min-width: 768px) {
-    position: relative;
-    width: 20rem;
-    height: 20rem;
-    border-radius: 1rem;
-  }
-`;
+// TÜM Styled Components tanımları kaldırıldı
 
 const Header = () => {
   const { darkMode, toggleDarkMode } = useTheme();
@@ -100,7 +71,7 @@ const Header = () => {
           </span>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="relative flex flex-col md:flex-row justify-between items-center">
           <div className="flex flex-col space-y-4 md:w-1/2">
             <h1 className="text-3xl font-normal ml-10 mb-4 md:text-6xl">
               {language === "tr" ? "Merhaba! 👋" : "Hi! 👋"}
@@ -112,12 +83,17 @@ const Header = () => {
             </p>
           </div>
 
-          <ProfilePicture>
+          {/* Profil Fotoğrafı: 'top-16' yerine 'top-24' deniyoruz */}
+          <div
+            className={`bg-pink-500 shadow-md rounded-full overflow-hidden w-20 h-20 absolute top-24 right-4
+            md:relative md:w-80 md:h-80 md:rounded-xl`}
+          >
             <img
+              className="object-cover w-full h-full"
               src={profilePic}
               alt={language === "tr" ? "Profil Fotoğrafı" : "Profile Picture"}
             />
-          </ProfilePicture>
+          </div>
         </div>
 
         <div className="flex justify-start gap-6 mt-8 p-4 ml-7">
@@ -157,7 +133,7 @@ const Header = () => {
               src={cvLogo}
               alt="CV Icon"
               className={`w-12 h-12 -mt-1.5 rounded-full object-contain
-                         transition-opacity duration-300 hover:opacity-70 hover:scale-110`} // Inline stiller tamamen Tailwind'e dönüştürüldü ve hover eklendi
+                         transition-opacity duration-300 hover:opacity-70 hover:scale-110`}
             />
           </a>
 
@@ -171,7 +147,7 @@ const Header = () => {
               alt="Email Icon"
               className={`w-10 h-10 -mt-0.5 rounded-full object-contain
                 filter drop-shadow-none invert hue-rotate-180 saturate-0 brightness-100%
-                transition-opacity duration-300 hover:opacity-70 hover:scale-110`} // Inline stiller tamamen Tailwind'e dönüştürüldü ve hover eklendi
+                transition-opacity duration-300 hover:opacity-70 hover:scale-110`}
             />
           </a>
         </div>
