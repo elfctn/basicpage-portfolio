@@ -37,6 +37,12 @@ import geminiLogo from "../assets/gemini.png";
 import openaiLogo from "../assets/openai.png";
 import cypressLogo from "../assets/cypress.jpg";
 
+// Yeni logoları import ediyoruz (jpeg uzantılı)
+import mongodbLogo from "../assets/mongodb.jpeg";
+import expressjsLogo from "../assets/expressjs.jpeg";
+import nextjsLogo from "../assets/nextjs.jpeg";
+import typescriptLogo from "../assets/typescript.jpeg";
+
 // Import edilen logolarla yetenek veri dizisini tanımlayın
 const skillsData = [
   { logo: htmlLogo, name: "HTML" },
@@ -54,6 +60,10 @@ const skillsData = [
   { logo: cypressLogo, name: "Cypress" },
 
   { logo: nodeLogo, name: "Node.js" },
+  { logo: mongodbLogo, name: "MongoDB" },
+  { logo: expressjsLogo, name: "Express.js" },
+  { logo: nextjsLogo, name: "Next.js" },
+  { logo: typescriptLogo, name: "TypeScript" },
   { logo: javaLogo, name: "Java" },
   { logo: postgreLogo, name: "SQL" }, // Genel SQL için postgreLogo kullanılıyor
   { logo: pythonLogo, name: "Python" },

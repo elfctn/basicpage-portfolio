@@ -1,10 +1,6 @@
 import { useTheme } from "../context/ThemeContext";
 import { useLanguage } from "../context/LanguageContext";
-// Tüm bireysel logo importlarını kaldırın
-// import javascriptLogo from "../assets/js-logo.jpg";
-// ... (diğer tüm logo importları)
 
-// Yetenek verilerini yeni veri dosyasından import edin
 import skillsData from "../data/skillImages.js"; // Gerekirse yolu ayarlayın
 
 const Skills = () => {
